@@ -33,7 +33,7 @@ const BookingForm: React.FC<BookingFormProps> = ({ onPromoApply, onUserDetailsCh
     if (!promo) return alert("Enter a promo code!");
 
     try {
-      const res = await fetch("http://localhost:3000/promo/validate", {
+      const res = await fetch("https://bookit-backend-2hha.onrender.com/promo/validate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ code: promo }),
