@@ -1,62 +1,33 @@
 # 🌍 BookIt: Experiences & Slots
-
-BookIt is a full-stack web application that allows users to explore travel experiences, select available slots, apply promo codes, and confirm bookings.
-
----
-
+**BookIt** is a full-stack web application that lets users explore curated travel experiences, choose preferred dates and slots, apply promo codes, and confirm their bookings — all through a clean, responsive, and intuitive interface.
 ## 🚀 Features
-
-- 🧭 Browse and explore curated travel experiences  
-- 🕒 Select date, time, and number of people  
+- 🧭 Explore and book travel experiences effortlessly  
+- 🕒 Select date, time, and number of participants  
 - 💸 Apply promo codes for instant discounts  
-- 📅 Confirm bookings and receive booking details  
-- 🔒 Secure and responsive design  
-
----
-
+- 📅 Receive instant booking confirmation with a reference ID  
+- 📱 Fully responsive and modern UI design  
 ## 🧠 Tech Stack
-
-**Frontend**
-- React + TypeScript (Vite)
-- TailwindCSS
-- Lucide Icons
-
-**Backend**
-- Node.js + Express
-- MongoDB + Mongoose
-
----
-
+**Frontend:** React + TypeScript (Vite), TailwindCSS, Lucide Icons  
+**Backend:** Node.js, Express.js, MongoDB (Mongoose ORM)  
 ## ⚙️ Installation & Setup
-
-### 1️⃣ Clone the Repository
-```bash
-git clone https://github.com/<your-username>/bookit.git
-cd bookit
-
-### 2️⃣ Install Dependencies
-- npm install
-
-### 3️⃣ Setup Environment Variables
-- Create a .env file inside the backend folder:
-MONGO_URI=your_mongodb_connection_string
-PORT=3000
-
-### 4️⃣ Run the Development Server
-npm run dev
-
+1️⃣ **Clone the repository**  
+`git clone https://github.com/<your-username>/bookit.git`  
+`cd bookit`  
+2️⃣ **Install dependencies**  
+`npm install`  
+3️⃣ **Setup environment variables (optional for backend)**  
+Create a `.env` file inside backend and add:  
+`MONGO_URI=your_mongodb_connection_string`  
+`PORT=3000`  
+4️⃣ **Run the development server**  
+`npm run dev`  
 ## 🧩 API Endpoints
-
-### Experiences
-- GET  /experiences        → Fetch all experiences
-- GET  /experiences/:id    → Fetch single experience
-
-### Bookings
-- POST /bookings           → Create a new booking
-- GET  /bookings/:id       → Get booking by ID
-
-## 🧑‍💻 Author
-
-- Surajit Mondal
-- 📍 Computer Science and Engineering, UEM India
-
+**Experiences**  
+- `GET /experiences` → Fetch all experiences  
+- `GET /experiences/:id` → Fetch a specific experience  
+**Bookings**  
+- `POST /bookings` → Create a new booking  
+- `GET /bookings/:id` → Retrieve booking details  
+## 👨‍💻 Author
+**Surajit Mondal**  
+📍 B.Tech in Computer Science and Engineering, University of Engineering & Management (UEM), India
