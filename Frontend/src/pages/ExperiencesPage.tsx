@@ -10,7 +10,7 @@ const ExperiencesPage: React.FC = () => {
   useEffect(() => {
     const fetchExperiences = async () => {
       try {
-        const res = await fetch("http://localhost:3000/experiences");
+        const res = await fetch("https://bookit-backend-2hha.onrender.com/experiences");
         const data = await res.json();
         setExperiences(data);
         setFiltered(data);
