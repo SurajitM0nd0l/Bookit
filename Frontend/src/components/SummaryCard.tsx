@@ -38,7 +38,7 @@ const SummaryCard: React.FC<SummaryCardProps> = ({
 
   const handleBooking = async () => {
     try {
-      const res = await fetch("http://localhost:3000/bookings", {
+      const res = await fetch("https://bookit-backend-2hha.onrender.com/bookings", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
